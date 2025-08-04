@@ -1,0 +1,91 @@
+#Subscripting
+print("Hello"[-3])
+
+#String
+print("123" + "345") #Concatenation
+
+#Integer = whole number without any decimal places
+print(123+345)
+
+#Large Integers
+print(123_456_789)
+
+#Float = floating point numbers
+print(3.14159)
+
+#Boolean
+print(True)
+print(False)
+
+data = [1,2,3,4,5]
+print(len(data))
+
+print(type("Hello"))
+print(type(123))
+print(type(123.45))
+print(type(True))
+
+#Type conversion
+print(int("123") + int("456"))
+float()
+str()
+int()
+bool()
+
+print("Number of letters in your name: " + str(len(input("Enter your name"))))
+
+print("My age: " + str(12))
+print(123+456)
+print(7-3)
+print(3*2)
+print(6/3) #implicit typecasting
+print(6//3)
+print(2**3)
+
+#PEMDAS
+#()
+#**
+#*
+#/
+#+
+#-
+
+print(3 * 3 + 3 / 3 - 3)
+
+print(3 * (3 + 3 )/ 3 - 3)
+
+#bmi_calculator
+height = 1.65
+weight = 84
+
+bmi = weight / height ** 2
+
+print(round(bmi,2))
+
+score = 0
+
+#user scores the point
+score += 1
+print(score)
+
+#f-strings
+user_score = 1
+user_height = 1.85
+is_winning = True
+
+print(f"Your score is = {user_score}, Your height is {user_height},You are winning is {is_winning}")
+
+#split_bill
+print("Welcome to the tip calculator!")
+bill = float(input("What was the total bill? $"))
+tip = int(input("What percentage tip would you like to give? 10 12 15 "))
+people = int(input("How many people to split the bill? "))
+
+tip_as_percent = tip / 100
+total_tip_amount = bill * tip_as_percent
+total_bill = bill + total_tip_amount
+bill_per_person = total_bill / people
+
+bill_last = round(bill_per_person,2)
+
+print(f"Each person should pay : ${bill_last}" )
